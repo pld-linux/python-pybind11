@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module
 
 %define		module		pybind11
 %define		egg_name	pybind11
@@ -11,7 +11,7 @@ Summary(pl.UTF-8):	Gładka współpraca między C++11 a Pythonem
 Name:		python-%{pypi_name}
 # keep 2.9.x here for python2 support
 Version:	2.9.2
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pybind11/
